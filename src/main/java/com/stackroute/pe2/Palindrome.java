@@ -1,9 +1,9 @@
-package com.stackroute.junitdemo;
+package com.stackroute.pe2;
 
 public class Palindrome {
     public String isAPalindrome(String input) {
 
-
+        //checks whether the given string is a palindrome or not
         StringBuilder result = new StringBuilder();
         char inputArray[] = input.toCharArray();
         int j = 0;

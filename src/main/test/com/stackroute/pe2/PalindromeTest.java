@@ -1,15 +1,17 @@
-package com.stackroute.junitdemo;
+package com.stackroute.pe2;
 
 import org.junit.*;
 
 import static org.junit.Assert.*;
 
-public class FactorialTest {
-    Factorial check;
+public class PalindromeTest {
+
+    Palindrome check;
+
     @Before
     public void setup() {
         System.out.println("Before");
-        check = new Factorial();
+        check = new Palindrome();
     }
 
     @After
@@ -31,16 +33,15 @@ public class FactorialTest {
     }
 
     @Test
-    public void giveninputShouldReturnFactorial() {
-        String result = check.findFact(17);
-        assertEquals("All factorials are printed", result);
+    public void givenCharacterShouldReturnTrue() {
+        String result = check.isAPalindrome("level");
+        assertEquals("Palindrome", result);
     }
-   @Test
-    public void giveninputShouldReturnLongFactorial() {
-       String result = check.findLongFact(30);
-       assertEquals("All factorials are printed", result);
+    @Test
+    public void givenCharacterShouldReturnFalse() {
+        String result = check.isAPalindrome("stackroute");
+        assertEquals("Not a Palindrome", result);
     }
 
 
 }
-

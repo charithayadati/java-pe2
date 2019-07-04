@@ -1,17 +1,16 @@
-package com.stackroute.junitdemo;
+package com.stackroute.pe2;
 
 import org.junit.*;
 
 import static org.junit.Assert.*;
 
-public class PalindromeTest {
-
-    Palindrome check;
+public class powerOfFourTest {
+    powerOfFour check;
 
     @Before
     public void setup() {
         System.out.println("Before");
-        check = new Palindrome();
+        check = new powerOfFour();
     }
 
     @After
@@ -34,13 +33,13 @@ public class PalindromeTest {
 
     @Test
     public void givenCharacterShouldReturnTrue() {
-        String result = check.isAPalindrome("level");
-        assertEquals("Palindrome", result);
+        String result = check.power(16);
+        assertEquals("True", result);
     }
     @Test
     public void givenCharacterShouldReturnFalse() {
-        String result = check.isAPalindrome("stackroute");
-        assertEquals("Not a Palindrome", result);
+        String result = check.power(22);
+        assertEquals("False", result);
     }
 
 

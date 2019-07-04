@@ -1,7 +1,7 @@
-package com.stackroute.junitdemo;
+package com.stackroute.pe2;
 
     public class Factorial {
-    public String findFact(int input)
+    public String findFact(int input)//finds the factorial for short integers
     {
 
         int fact = 1;
@@ -16,7 +16,7 @@ package com.stackroute.junitdemo;
         }
         return "All factorials are printed";
     }
-   public String findLongFact(long input)
+   public String findLongFact(long input)//finds the factorial for long type of integers
     {
         long fact=1;
 

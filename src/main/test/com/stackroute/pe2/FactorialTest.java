@@ -1,16 +1,15 @@
-package com.stackroute.junitdemo;
+package com.stackroute.pe2;
 
 import org.junit.*;
 
 import static org.junit.Assert.*;
 
-public class powerOfFourTest {
-    powerOfFour check;
-
+public class FactorialTest {
+    Factorial check;
     @Before
     public void setup() {
         System.out.println("Before");
-        check = new powerOfFour();
+        check = new Factorial();
     }
 
     @After
@@ -32,15 +31,16 @@ public class powerOfFourTest {
     }
 
     @Test
-    public void givenCharacterShouldReturnTrue() {
-        String result = check.power(16);
-        assertEquals("True", result);
+    public void giveninputShouldReturnFactorial() {
+        String result = check.findFact(17);
+        assertEquals("All factorials are printed", result);
     }
-    @Test
-    public void givenCharacterShouldReturnFalse() {
-        String result = check.power(22);
-        assertEquals("False", result);
+   @Test
+    public void giveninputShouldReturnLongFactorial() {
+       String result = check.findLongFact(30);
+       assertEquals("All factorials are printed", result);
     }
 
 
 }
+

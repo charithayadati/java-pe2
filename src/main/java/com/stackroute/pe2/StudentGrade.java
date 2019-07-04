@@ -1,8 +1,8 @@
-package com.stackroute.junitdemo;
+package com.stackroute.pe2;
 
 public class StudentGrade {
 
-    public float Average(int marks[])
+    public float Average(int marks[])   //calculates the average of marks
     {
         float average= (float) 0.0;
         for (int i = 0; i < marks.length; i++) {
@@ -12,7 +12,7 @@ public class StudentGrade {
         average=average/marks.length;
         return average;
     }
-    public  int getMax(int[] inputArray){
+    public  int getMax(int[] inputArray){   //gets maximum of marks
         int maxValue = inputArray[0];
         for(int i=1;i < inputArray.length;i++){
             if(inputArray[i] > maxValue){
@@ -21,7 +21,7 @@ public class StudentGrade {
         }
         return maxValue;
     }
-    public  int getMin(int[] inputArray){
+    public  int getMin(int[] inputArray){   //gets minimum of marks
         int minValue = inputArray[0];
         for(int i=1;i<inputArray.length;i++){
             if(inputArray[i] < minValue){
@@ -31,7 +31,7 @@ public class StudentGrade {
         return minValue;
     }
 
-    public String printGrade(int marks[])
+    public String printGrade(int marks[])   //prints the grades
     {
         if(marks.length!=0)
         {

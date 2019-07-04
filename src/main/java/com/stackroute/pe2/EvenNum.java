@@ -1,7 +1,7 @@
-package com.stackroute.junitdemo;
+package com.stackroute.pe2;
 
 public class EvenNum {
-    public static boolean isEven(int number)
+    public static boolean isEven(int number)//checks whether the given number is even or not
     {
         boolean result=true;
         if(number%2==0)

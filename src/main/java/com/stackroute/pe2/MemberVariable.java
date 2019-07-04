@@ -1,4 +1,4 @@
-package com.stackroute.junitdemo;
+package com.stackroute.pe2;
 
  class Member {
      private String name;
@@ -29,7 +29,7 @@ package com.stackroute.junitdemo;
         this.salary = salary;
     }
 
-
+    //Constructors for the class member
 
     Member(String name,int age,double salary)
     {
@@ -50,7 +50,7 @@ package com.stackroute.junitdemo;
 }
 
 public class MemberVariable
-
+        //displays age , name and salary
 {
     public String printMemberVariable(String name,int age,double salary){
 
